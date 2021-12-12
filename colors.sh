@@ -66,7 +66,7 @@ option_value(){ echo "$1" | sed -e 's%^--[^=]*=%%g; s%^-[^=]*=%%g'; }
 while test $# -gt 0; do
 	case "$1" in
 	-h|--help)
-		. <(wget -qO- https://raw.githubusercontent.com/DexHeim/tools/main/logo.sh)
+		. <(wget -qO- https://raw.githubusercontent.com/DexHeim/tools/blob/main/logo.sh)
 		echo
 		echo -e "${C_LGn}Functionality${RES}: the script assigns variables with colors to be used in the texts (e.g. in the 'echo' and 'printf' commands)"
 		echo
